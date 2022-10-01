@@ -10,7 +10,7 @@ faces = detector.detectMultiScale(
     minNeighbors=20, # so tang phai vuot qua.
     minSize=(30, 30), # kick thuoc cua hinh vuong ban dau
 )
-print(faces)
+
 for (x, y, w, h) in faces:
     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 cv2.imshow("img", img)
